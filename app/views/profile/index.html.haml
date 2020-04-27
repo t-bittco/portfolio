@@ -1,0 +1,46 @@
+
+
+.container
+  .about-contents
+    .inner
+      %section.about
+        %h2 About me
+        %p
+          フリーでWebアプリ制作を活動しているTasukuです。
+          %br>/
+          プログラミング専門のスクールに通い、Web制作においての専門技術を学びました。
+          %br>/
+          スクールではチャットサービス、フリマサイトを作成し、webアプリ制作のいろはを習得しました。
+          %br>/
+          卒業後は、スキル向上を目指して邁進しております。
+          %br>/
+          趣味は、猫カフェ巡りと金麦を飲む事です。
+          %br>/
+          %br>/
+        .about-me
+          = image_tag "profile.png"
+          %div
+            %p Tasuku
+            %table
+              %tbody
+                %tr
+                  %th 所在地
+                  %td 岐阜県
+                %tr
+                  %th お問い合わせ
+                  %td tsno.nova@gmail.com  （snsのDMからも承ります）
+                %tr
+                  %th 事業内容
+                  %td HTML・CSS・javascript等によるフロントエンド業務, Ruby on railsを用いたバックエンド業務 
+                %tr
+                  %th スキル
+                  %td HTML・CSS・Haml・SCSS・Ruby・Ruby on Rails・JavaScript・jQuery・SQL・Git・GitHub・AWS・MATLAB/Simulink
+  .top-contents2
+    .inner
+      %section.menu2
+        %div
+          %ul
+            %li
+              = link_to'About',profile_index_path
+            %li
+              = link_to'Works',works_path

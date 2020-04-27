@@ -1,0 +1,5 @@
+%li
+  = link_to work_path(work.id), method: :get do
+    = image_tag work.image.url
+    %p
+      = work.title

@@ -1,0 +1,29 @@
+.container
+  .top-img
+    .inner
+      .page-pc
+        = image_tag "Top.jpeg"
+      -# .page-mb
+      -#   = image_tag "top-mb.png"
+  .top-contents1
+    .inner
+      %section.voice
+        %div
+          Tasukuのポートフォリオサイト。
+          %br>/
+          猫とものづくりが好きで
+          %br>/
+          面白さ・使いやすさを感じるものを作っていきたいです。
+          %br>/
+          誰かのお役に立てれば幸いです。
+  .top-contents2
+    .inner
+      %section.menu2
+        %div
+          %ul
+            %li
+              = link_to'About',profile_index_path
+            %li
+              = link_to'Works',works_path
+               
+            

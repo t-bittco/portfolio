@@ -1,0 +1,38 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv": "Content-Type"}/
+    %title Portfolio
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %link{href: "https://use.fontawesome.com/releases/v5.6.1/css/all.css", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700&display=swap&subset=japanese", rel: "stylesheet"}/
+  %body
+    %header
+      .inner
+        %h1
+          = link_to root_path do
+            = image_tag "title1.png"
+           
+        .page-pc
+          %ul.header_sns
+            %li
+              = link_to "https://twitter.com/tsno00", target: "_blank" do
+                %i.fab.fa-twitter
+            %li
+              = link_to "https://www.instagram.com/task_n/?hl=ja", target: "_blank" do
+                %i.fab.fa-instagram
+            %li
+              = link_to "https://github.com/t-bittco", target: "_blank" do
+                %i.fab.fa-github
+        
+    = yield
+    %footer
+      .inner
+        %p.copyright
+          Copyright © Tasuku's Portfolio.
+          -# - if user_signed_in?
+          -#   = link_to "OUT", destroy_user_session_path, method: :delete
