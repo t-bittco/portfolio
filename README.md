@@ -22,3 +22,33 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+-------------------------------------------------------
+
+# works
+
+## worksテーブル
+|Column         |Type   |Options    |
+|---------------|-------|-----------|
+|id             |integer|null: false|
+|title          |string |null: false|
+|image          |string |null: false|
+|period         |string |null: false|
+|skill          |string |null: false|
+|charge         |string |null: false|
+|summary        |text   |null: false|
+|user_id        |integer|null: false|
+### Association
+- belongs_to: user
+
+# users
+
+## usersテーブル
+|Column         |Type   |Options    |
+|---------------|-------|-----------|
+|id             |integer|null: false|
+|email          |string |null: false|
+|password       |string |null: false|
+### Association
+- has_many: works
+-------------------------------------------------------
+

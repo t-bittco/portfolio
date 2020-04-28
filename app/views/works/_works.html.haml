@@ -1,5 +1,41 @@
-%li
-  = link_to work_path(work.id), method: :get do
-    = image_tag work.image.url
-    %p
-      = work.title
+.container
+  .work-contents
+    .inner
+      %section.works
+        %h2.works__h2
+          = works.title
+        .works__top
+          = image_tag works.image
+          .works__top__detail
+            %table
+              %tbody
+                %tr
+                  %th
+                    %div 制作期間
+                %tr
+                  %td
+                    %div
+                      = works.period
+                %tr
+                  %th
+                    %div 制作スキル
+                %tr
+                  %td
+                    %div
+                      = works.skill
+                %tr
+                  %th
+                    %div 担当
+                %tr    
+                  %td
+                    %div
+                      = works.charge
+
+        .works__middle
+          %h3 概要
+          %p
+            = simple_format(works.summary)
+        .works__bottom
+          - if user_signed_in? && current_user.id == works.user_id
+            = link_to '編集', edit_work_path(works.id), method: :get, class: 'btn_f'
+            = link_to '削除', "/works/#{works.id}", method: :delete, data: { confirm: '削除しますか？' }, class: 'btn_f'

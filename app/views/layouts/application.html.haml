@@ -34,5 +34,8 @@
       .inner
         %p.copyright
           Copyright © Tasuku's Portfolio.
-          -# - if user_signed_in?
-          -#   = link_to "OUT", destroy_user_session_path, method: :delete
+          - if user_signed_in?
+            = link_to "", destroy_user_session_path, method: :delete,class: 'devise'
+          - else
+            = link_to "",new_user_session_path,class: 'devise'
+            = link_to "",new_user_registration_path,class: 'devise'

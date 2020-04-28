@@ -7,7 +7,7 @@
           = link_to "投稿", new_work_path, class: 'btn_f'
         %div
           %ul
-            = render @works
+            = render partial: 'works', collection: @works
           .pagination-inner
             = paginate(@works)
   .top-contents2
@@ -16,12 +16,6 @@
         %div
           %ul
             %li
-              = link_to abouts_path do
-                %div
-                  = image_tag "about.png"
-                  About
+              = link_to'About',profile_index_path
             %li
-              = link_to works_path do
-                %div
-                  = image_tag "work.png"
-                  Works
+              = link_to'Works',works_path
