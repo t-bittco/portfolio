@@ -3,8 +3,13 @@
   .work-contents{
     .inner{
       .works{
+        h2{
+          font-size: 40px;
+          text-align: center;
+          padding-top: 15px;
+        }
         h2.works__h2{
-          margin: 0 0 30px 0;
+          margin: 20px 0 30px 0;
           font-size: 35px;
           font-weight: 300;
           text-align: center;
@@ -29,7 +34,6 @@
                     text-align: center;
                     line-height: 15px;
                     width: 120px;
-                    // background-color: #eee;
                     border-radius: 5px;
                     font-size: 15px;
 
@@ -61,7 +65,6 @@
             box-sizing: border-box;
             border:solid 2px ;
             border-radius: 5px;
-            // padding-left: 8px;
             margin: 40px 0 7px 0;
             font-weight: 600;
             color: $black;
