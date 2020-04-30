@@ -35,7 +35,7 @@
                     line-height: 15px;
                     width: 120px;
                     border-radius: 5px;
-                    font-size: 15px;
+                    font-size: 17px;
 
                   }
                   div.detail-h{
@@ -50,7 +50,7 @@
                     margin-left: 15px;
                     font-weight: 600;
                     word-break: break-all;
-                    font-size: 15px;
+                    font-size: 17px;
                   }
                 }
               }
@@ -70,10 +70,10 @@
             color: $black;
             width: 120px;
             text-align: center;
-            font-size: 15px;
+            font-size: 17px;
           }
           p{
-            font-size: 15px;
+            font-size: 17px;
             line-height: 1.8em;
             font-weight: 300;
             color: $black;
@@ -104,7 +104,7 @@
   }
 }
 
-/*PC用*/
+
 @media screen and (min-width: 960px){
   .container{
     .work-contents{
@@ -131,7 +131,7 @@
   }
 }
 
-/*タブレット・スマホ用*/
+
 @media screen and (max-width: 959px){
   .container{
     .work-contents{
