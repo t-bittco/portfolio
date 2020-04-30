@@ -57,7 +57,7 @@
   .container{
     .about-contents{
       .inner{
-        width: 1200px;
+        width: 100%;
         margin: 0 auto;
         .about{
           width: 800px;
@@ -72,6 +72,7 @@
   .container{
     .about-contents{
       .inner{
+        width: 100%;
         .about{
           margin: 0 20px;
           h2{
@@ -94,7 +95,7 @@
               width: 100%;
               table{
                 width: 70%;
-                font-size: 13px;
+                font-size: 17px;
                 text-align: left;
                 margin: 0 auto;
                 tr{
