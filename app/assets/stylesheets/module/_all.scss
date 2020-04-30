@@ -15,16 +15,16 @@ body{
   
 }
 
-/*PC用*/
+
 @media screen and (min-width: 960px){
-  .screen-mb{
+  .screen-pc{
     display: none;
   }
 }
 
-/*タブレット・スマホ用*/
+
 @media screen and (max-width: 959px){
-  .screen-pc{
+  .screen-mb{
     display: none;
   }
 }
